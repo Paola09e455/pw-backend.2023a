@@ -7,5 +7,6 @@ from.import views
 #Declaramos las rutas validad
 urlpatterns = [
     path("", views.index, name="index"),
-    path("author/", views.author, name="author")
+    path("author/", views.author, name="author"),
+    path("<str:name>", views.greet, name="Paola")
 ]
